@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="doc/assets/header.png" alt="AIOX Squads — expert AI teams, ready to deploy" width="720" />
+  <img src="assets/header.png" alt="AIOX Squads — expert AI teams, ready to deploy" width="720" />
 </p>
 
 <p align="center">
@@ -11,10 +11,14 @@
 
 <p align="center">
   <a href="https://github.com/SynkraAI/aiox-squads/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License" /></a>
-  <a href="https://github.com/SynkraAI/aiox-squads/stargazers"><img src="https://img.shields.io/github/stars/SynkraAI/aiox-squads?style=flat" alt="Stars" /></a>
+  <a href="https://github.com/SynkraAI/aiox-squads/stargazers"><img src="https://img.shields.io/github/stars/AIOSAI/aiox-squads?style=flat" alt="Stars" /></a>
   <a href="https://github.com/SynkraAI/aiox-squads"><img src="https://img.shields.io/badge/squads-21-blue" alt="Squads" /></a>
   <a href="https://github.com/SynkraAI/aiox-squads"><img src="https://img.shields.io/badge/agents-184+-purple" alt="Agents" /></a>
   <a href="https://github.com/SynkraAI/aiox-squads"><img src="https://img.shields.io/badge/tasks-499+-green" alt="Tasks" /></a>
+</p>
+
+<p align="center">
+  <a href="../README.md">🇧🇷 Versão em português</a>
 </p>
 
 <br/>
@@ -25,15 +29,15 @@
 
 **If an AI agent is an _employee_, a Squad is an entire _department_.**
 
-AIOX Squads is a library of self-contained, expert-cloned AI agent teams for Claude Code. Each squad bundles agents, tasks, workflows, and quality gates into a single folder you drop into your project. From copywriting to cybersecurity, from brand strategy to data analytics — every squad is a ready-to-activate team of world-class AI specialists.
+AIOX Squads is the official library of specialized teams for the [AIOS](https://github.com/SynkraAI/aiox-core) framework. Each squad is a self-contained package of AI agents cloned from real-world experts — with Voice DNA, decision heuristics, and quality gates — that you install into your project with a single command. From copywriting to cybersecurity, from brand strategy to data analytics.
 
 **Don't prompt agents. Deploy departments.**
 
 |        | Step                | Example                                                            |
 | ------ | ------------------- | ------------------------------------------------------------------ |
 | **01** | Pick a squad        | _"I need elite copywriting."_                                       |
-| **02** | Drop it in          | Copy the folder to your project. One command.                       |
-| **03** | Activate the chief  | `@copy-chief` — the squad's orchestrator routes your work to the right specialist. |
+| **02** | Install it          | `*download-squad copy` — or copy the folder manually.               |
+| **03** | Activate the chief  | `@copy-chief` — the orchestrator routes your work to the right specialist. |
 
 <br/>
 
@@ -45,12 +49,14 @@ AIOX Squads is a library of self-contained, expert-cloned AI agent teams for Cla
 <table>
   <tr>
     <td align="center"><strong>Works<br/>with</strong></td>
-    <td align="center"><img src="https://cdn.simpleicons.org/anthropic/181818" width="28" alt="Claude" /><br/><sub>Claude Code</sub></td>
-    <td align="center"><img src="https://cdn.simpleicons.org/openai/181818" width="28" alt="Adaptable" /><br/><sub>Adaptable</sub></td>
+    <td align="center"><img src="https://cdn.simpleicons.org/anthropic/181818" width="28" alt="Claude Code" /><br/><sub>Claude Code</sub></td>
+    <td align="center"><img src="https://cdn.simpleicons.org/openai/181818" width="28" alt="Codex CLI" /><br/><sub>Codex CLI</sub></td>
+    <td align="center"><img src="https://cdn.simpleicons.org/google/181818" width="28" alt="Gemini CLI" /><br/><sub>Gemini CLI</sub></td>
+    <td align="center"><img src="https://cdn.simpleicons.org/cursor/181818" width="28" alt="Cursor" /><br/><sub>Cursor</sub></td>
   </tr>
 </table>
 
-<em>Optimized for Claude Code. Portable to any LLM that supports structured agents.</em>
+<em>Works on any IDE or CLI that supports structured agents via <a href="https://github.com/SynkraAI/aiox-core">AIOS</a>.</em>
 
 </div>
 
@@ -78,7 +84,7 @@ Agents carry Voice DNA and Thinking DNA from real specialists. Not generic promp
 </td>
 <td align="center" width="33%">
 <h3>📦 Drop-in Ready</h3>
-Copy a folder, activate the chief. Each squad is fully self-contained — agents, tasks, templates, data.
+Install with <code>*download-squad</code> or copy the folder. Each squad is fully self-contained — agents, tasks, templates, data.
 </td>
 <td align="center" width="33%">
 <h3>🏗️ Tier Architecture</h3>
@@ -122,7 +128,7 @@ MIT licensed. Use commercially. Fork freely. Contribute back.
 | Without Squads | With Squads |
 |---|---|
 | ❌ You spend 30 minutes writing a copywriting prompt, and the agent still sounds generic. | ✅ `@copy-chief` routes your request to Gary Halbert's cloned agent. Voice DNA handles the rest. |
-| ❌ Every new project starts from zero — no knowledge, no frameworks, no structure. | ✅ Drop in a squad folder. Instant access to 60+ expert minds with proven heuristics. |
+| ❌ Every new project starts from zero — no knowledge, no frameworks, no structure. | ✅ `*download-squad advisory-board` — instant access to 60+ expert minds with proven heuristics. |
 | ❌ You ask for "brand strategy" and get a vague 5-paragraph essay. | ✅ The brand squad runs structured tasks with Aaker, Keller, and Ries frameworks built in. |
 | ❌ Your agent gives advice but you have no way to validate if it's actually good. | ✅ Every task has quality gates, checklists, and scoring criteria. Outputs are measured, not hoped for. |
 | ❌ You need multiple specialties (copy + data + design) and manually coordinate between them. | ✅ Squads compose. Handoff protocols let agents delegate across squad boundaries. |
@@ -147,31 +153,49 @@ MIT licensed. Use commercially. Fork freely. Contribute back.
 
 |                              |                                                                                                    |
 | ---------------------------- | -------------------------------------------------------------------------------------------------- |
-| **Not an agent framework.**  | We don't build agents from scratch. We package expert knowledge into teams that work out of the box. |
+| **Not an agent framework.**  | The framework is [AIOS](https://github.com/SynkraAI/aiox-core). Squads are expert knowledge packages that run on it. |
 | **Not a prompt library.**    | Squads are full systems — agents, tasks, workflows, checklists, templates, data. Not just text files. |
 | **Not a chatbot.**           | Agents have tasks, quality gates, and handoff protocols. Not open-ended conversations.               |
 | **Not a one-size-fits-all.** | Each squad is a specialist. Pick the ones you need. You don't install the whole hospital for a headache. |
-| **Not locked to Claude.**    | Optimized for Claude Code, but the agent structure is portable to any system that supports structured prompts. |
 
 <br/>
 
 ## Quickstart
 
+### Prerequisite: AIOS
+
+Squads run on the [AIOS](https://github.com/SynkraAI/aiox-core) framework. If you don't have it yet:
+
 ```bash
-# 1. Clone the library
+npx aios-core init my-project
+```
+
+### Install a Squad
+
+```bash
+# Option 1: Via AIOS CLI (recommended)
+@squad-chief
+*download-squad copy
+
+# Option 2: Manual
 git clone https://github.com/SynkraAI/aiox-squads.git
-
-# 2. Copy a squad into your project
 cp -r aiox-squads/squads/copy ./squads/copy
+```
 
-# 3. Activate in Claude Code
+### Use it
+
+```bash
+# Activate the squad's chief
 @copy-chief
 
-# 4. Run a task
+# See available commands
+*help
+
+# Run a task
 *create-sales-page
 ```
 
-> **Requirements:** Claude Code CLI with custom agent support.
+> **Compatible with:** Claude Code, Codex CLI, Gemini CLI, Cursor — any IDE supported by [AIOS](https://github.com/SynkraAI/aiox-core).
 
 <br/>
 
@@ -181,51 +205,51 @@ cp -r aiox-squads/squads/copy ./squads/copy
 
 | Squad | Agents | What it does | Status |
 |-------|--------|-------------|--------|
-| [**copy**](squads/copy/) | 24 | Elite copywriting — 24 legends (Halbert, Schwartz, Ogilvy, Hopkins...) organized in tiers | 🟢 OPERATIONAL |
-| [**storytelling**](squads/storytelling/) | 13 | Narrative structure — Campbell, Snyder, Duarte, Harmon, Miller | 🟡 DEVELOPING |
-| [**traffic-masters**](squads/traffic-masters/) | 16 | Paid media — Meta, Google, YouTube Ads with performance analysis | 🟡 DEVELOPING |
-| [**movement**](squads/movement/) | 8 | Ideological marketing — 8 levels (N1–N8) of movement building | 🟡 DEVELOPING |
+| [**copy**](../squads/copy/) | 24 | Elite copywriting — 24 legends (Halbert, Schwartz, Ogilvy, Hopkins...) organized in tiers | 🟢 OPERATIONAL |
+| [**storytelling**](../squads/storytelling/) | 13 | Narrative structure — Campbell, Snyder, Duarte, Harmon, Miller | 🟡 DEVELOPING |
+| [**traffic-masters**](../squads/traffic-masters/) | 16 | Paid media — Meta, Google, YouTube Ads with performance analysis | 🟡 DEVELOPING |
+| [**movement**](../squads/movement/) | 8 | Ideological marketing — 8 levels (N1–N8) of movement building | 🟡 DEVELOPING |
 
 ### Business & Strategy
 
 | Squad | Agents | What it does | Status |
 |-------|--------|-------------|--------|
-| [**advisory-board**](squads/advisory-board/) | 11 | Advisory council — Dalio, Munger, Thiel, Sinek, Hoffman... | 🟡 DEVELOPING |
-| [**hormozi**](squads/hormozi/) | 16 | Alex Hormozi methodology — offers, leads, pricing, scaling | 🟡 DEVELOPING |
-| [**c-level**](squads/c-level/) | 6 | Executive C-Suite — CTO, CIO, CMO, COO, CAIO, Vision Chief | 🟡 DEVELOPING |
-| [**data**](squads/data/) | 7 | Analytics & growth — CLV, health scores, community metrics, PMF | 🟢 OPERATIONAL |
-| [**franchise**](squads/franchise/) | 6 | Franchising — feasibility, COF, franchisor-franchisee relations | 🟡 DEVELOPING |
-| [**spy**](squads/spy/) | 3 | Competitive intelligence — player analysis, trends, benchmarks | 🟡 DEVELOPING |
+| [**advisory-board**](../squads/advisory-board/) | 11 | Advisory council — Dalio, Munger, Thiel, Sinek, Hoffman... | 🟡 DEVELOPING |
+| [**hormozi**](../squads/hormozi/) | 16 | Alex Hormozi methodology — offers, leads, pricing, scaling | 🟡 DEVELOPING |
+| [**c-level**](../squads/c-level/) | 6 | Executive C-Suite — CTO, CIO, CMO, COO, CAIO, Vision Chief | 🟡 DEVELOPING |
+| [**data**](../squads/data/) | 7 | Analytics & growth — CLV, health scores, community metrics, PMF | 🟢 OPERATIONAL |
+| [**franchise**](../squads/franchise/) | 6 | Franchising — feasibility, COF, franchisor-franchisee relations | 🟡 DEVELOPING |
+| [**spy**](../squads/spy/) | 3 | Competitive intelligence — player analysis, trends, benchmarks | 🟡 DEVELOPING |
 
 ### Brand & Identity
 
 | Squad | Agents | What it does | Status |
 |-------|--------|-------------|--------|
-| [**brand**](squads/brand/) | 15 | Brand strategy — Aaker, Keller, Ries, Sharp, StoryBrand, naming | 🟡 DEVELOPING |
+| [**brand**](../squads/brand/) | 15 | Brand strategy — Aaker, Keller, Ries, Sharp, StoryBrand, naming | 🟡 DEVELOPING |
 
 ### Technical
 
 | Squad | Agents | What it does | Status |
 |-------|--------|-------------|--------|
-| [**cybersecurity**](squads/cybersecurity/) | 15 | Offensive & defensive security — pentest, SOC, secure coding | 🟡 DEVELOPING |
-| [**design**](squads/design/) | 8 | Design systems — tokens, components, Atomic Design, DesignOps | 🟡 DEVELOPING |
-| [**db-sage**](squads/db-sage/) | 2 | PostgreSQL/Supabase specialist — schema, RLS, migrations | 🟢 OPERATIONAL |
-| [**etl-ops**](squads/etl-ops/) | 3 | Data pipelines — extraction, transformation, loading | 🟡 DEVELOPING |
-| [**domain-decoder**](squads/domain-decoder/) | 8 | Domain extraction — reverse-engineers business rules from brownfield code | 🟡 DEVELOPING |
+| [**cybersecurity**](../squads/cybersecurity/) | 15 | Offensive & defensive security — pentest, SOC, secure coding | 🟡 DEVELOPING |
+| [**design**](../squads/design/) | 8 | Design systems — tokens, components, Atomic Design, DesignOps | 🟡 DEVELOPING |
+| [**db-sage**](../squads/db-sage/) | 2 | PostgreSQL/Supabase specialist — schema, RLS, migrations | 🟢 OPERATIONAL |
+| [**etl-ops**](../squads/etl-ops/) | 3 | Data pipelines — extraction, transformation, loading | 🟡 DEVELOPING |
+| [**domain-decoder**](../squads/domain-decoder/) | 8 | Domain extraction — reverse-engineers business rules from brownfield code | 🟡 DEVELOPING |
 
 ### Research & Knowledge
 
 | Squad | Agents | What it does | Status |
 |-------|--------|-------------|--------|
-| [**deep-research**](squads/deep-research/) | 11 | Systematic research — PICO, systematic review, bias audit | 🔴 DRAFT |
-| [**claude-code-mastery**](squads/claude-code-mastery/) | 8 | Claude Code expertise — hooks, MCP, subagents, config, skills | 🟡 DEVELOPING |
-| [**tribunal**](squads/tribunal/) | 7 | Decision tribunal — 5 historical minds as cognitive advisors | 🟡 DEVELOPING |
+| [**deep-research**](../squads/deep-research/) | 11 | Systematic research — PICO, systematic review, bias audit | 🔴 DRAFT |
+| [**claude-code-mastery**](../squads/claude-code-mastery/) | 8 | Claude Code expertise — hooks, MCP, subagents, config, skills | 🟡 DEVELOPING |
+| [**tribunal**](../squads/tribunal/) | 7 | Decision tribunal — 5 historical minds as cognitive advisors | 🟡 DEVELOPING |
 
 ### Meta-Squads
 
 | Squad | Agents | What it does | Status |
 |-------|--------|-------------|--------|
-| [**squad-creator**](squads/squad-creator/) | 1 | Creates new squads via templates and structural validation | 🟢 OPERATIONAL |
+| [**squad-creator**](../squads/squad-creator/) | 1 | Creates new squads via templates and structural validation | 🟢 OPERATIONAL |
 
 <br/>
 
@@ -233,7 +257,7 @@ cp -r aiox-squads/squads/copy ./squads/copy
 
 ### The Tier System
 
-Every squad follows a military-grade chain of command:
+Every squad follows a clear chain of command:
 
 ```
   Tier 0 — Chief (Orchestrator)
@@ -283,6 +307,28 @@ Every squad passes through 4 tiers of validation:
 
 <br/>
 
+## CLI Commands
+
+Squad management via `@squad-chief`:
+
+```bash
+# Discover and install
+*list-squads                              # List available squads
+*download-squad {name} [@{version}]       # Install a squad
+
+# Create and edit
+*design-squad [--domain {domain}]         # Design a new squad
+*create-squad {name} [--template {type}]  # Create from template
+*extend-squad {name} [--add {type}]       # Add agent, task, workflow...
+
+# Validate and publish
+*validate-squad {name} [--strict]         # Validate structure and quality
+*analyze-squad {name} [--verbose]         # Detailed analysis
+*publish-squad {path}                     # Publish squad
+```
+
+<br/>
+
 ## Build Your Own Squad
 
 ### Option 1: Squad Creator (recommended)
@@ -311,22 +357,22 @@ Create `config.yaml`, build your chief agent, add tasks, then validate:
 
 ## Ecosystem
 
-AIOX Squads is part of the [SynkraAI](https://github.com/SynkraAI) ecosystem:
+AIOX Squads is the expert knowledge layer of the [AIOS](https://github.com/SynkraAI) ecosystem:
 
 <div align="center">
 <table>
   <tr>
     <td align="center" width="33%">
-      <a href="https://github.com/SynkraAI/aiox-core"><strong>aiox-core</strong></a><br/>
-      <sub>The orchestration engine.<br/>CLI-first. 11 built-in agents.<br/>Story-driven development.</sub>
+      <a href="https://github.com/SynkraAI/aiox-core"><strong>AIOS</strong></a><br/>
+      <sub>The orchestration framework.<br/>CLI-first. 12 built-in agents.<br/>Story-driven development.</sub>
     </td>
     <td align="center" width="33%">
-      <a href="https://github.com/SynkraAI/aiox-dashboard"><strong>aiox-dashboard</strong></a><br/>
-      <sub>Real-time observability.<br/>Kanban, agent status,<br/>live event monitoring.</sub>
-    </td>
-    <td align="center" width="33%">
-      <a href="https://github.com/SynkraAI/aiox-squads"><strong>aiox-squads</strong></a><br/>
+      <a href="https://github.com/SynkraAI/aiox-squads"><strong>AIOX Squads</strong></a><br/>
       <sub>Expert AI teams.<br/>21 squads, 184+ agents,<br/>60+ cloned minds.</sub>
+    </td>
+    <td align="center" width="33%">
+      <a href="https://github.com/SynkraAI/aiox-dashboard"><strong>AIOX Dashboard</strong></a><br/>
+      <sub>Real-time observability.<br/>Kanban, agent status,<br/>live event monitoring.</sub>
     </td>
   </tr>
 </table>
@@ -336,17 +382,20 @@ AIOX Squads is part of the [SynkraAI](https://github.com/SynkraAI) ecosystem:
 
 ## FAQ
 
-**Do I need all the squads?**
-No. Each squad is self-contained. Copy only what you need.
+**Do I need AIOS to use squads?**
+Yes. Squads are packages that run on the [AIOS](https://github.com/SynkraAI/aiox-core) framework. Install with `npx aios-core init`.
 
-**Does it work with LLMs other than Claude?**
-Squads are optimized for Claude Code, but the agent structure (persona + heuristics + tasks) can be adapted to any system.
+**Do I need all the squads?**
+No. Each squad is self-contained. Install only what you need.
+
+**Does it only work on Claude Code?**
+No. AIOS supports Claude Code, Codex CLI, Gemini CLI, and Cursor. Compatibility varies by IDE — Claude Code has full support.
 
 **Can I use it in commercial projects?**
 Yes. MIT license.
 
 **How do I update a squad?**
-Replace the squad folder with the new version. Each squad's `CHANGELOG.md` documents breaking changes.
+Run `*download-squad {name}` again or replace the folder manually. Each squad's `CHANGELOG.md` documents breaking changes.
 
 **How is this different from a prompt library?**
 Squads are full systems — agents with decision heuristics, executable tasks with quality gates, templates, checklists, and knowledge bases. Not just text files with instructions.
@@ -363,7 +412,7 @@ It's how we clone expert communication style. Sentence starters, vocabulary rule
 3. Run `*validate-squad {name}` and ensure score ≥ 7.0
 4. Open a PR with: domain description, validation score, and at least 1 real usage example
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
+See [CONTRIBUTING.md](../CONTRIBUTING.md) for the full guide.
 
 <br/>
 
@@ -380,7 +429,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide.
 
 ## License
 
-MIT &copy; 2025 SynkraAI
+MIT &copy; 2026 AIOX Squads
 
 <br/>
 
@@ -391,5 +440,5 @@ MIT &copy; 2025 SynkraAI
 </p>
 
 <p align="center">
-  <sub>Part of the <a href="https://github.com/SynkraAI">SynkraAI</a> ecosystem.</sub>
+  <sub>Part of the <a href="https://github.com/SynkraAI">AIOS</a> ecosystem.</sub>
 </p>

@@ -4,14 +4,14 @@
 
 <p align="center">
   <a href="#quickstart"><strong>Quickstart</strong></a> &middot;
-  <a href="#catalogo-de-squads"><strong>Catálogo</strong></a> &middot;
+  <a href="#catálogo-de-squads"><strong>Catálogo</strong></a> &middot;
   <a href="https://github.com/SynkraAI/aiox-squads"><strong>GitHub</strong></a> &middot;
   <a href="https://github.com/SynkraAI/aiox-squads/discussions"><strong>Discussões</strong></a>
 </p>
 
 <p align="center">
   <a href="https://github.com/SynkraAI/aiox-squads/blob/main/LICENSE"><img src="https://img.shields.io/badge/licença-MIT-blue" alt="MIT License" /></a>
-  <a href="https://github.com/SynkraAI/aiox-squads/stargazers"><img src="https://img.shields.io/github/stars/SynkraAI/aiox-squads?style=flat" alt="Stars" /></a>
+  <a href="https://github.com/SynkraAI/aiox-squads/stargazers"><img src="https://img.shields.io/github/stars/AIOSAI/aiox-squads?style=flat" alt="Stars" /></a>
   <a href="https://github.com/SynkraAI/aiox-squads"><img src="https://img.shields.io/badge/squads-21-blue" alt="Squads" /></a>
   <a href="https://github.com/SynkraAI/aiox-squads"><img src="https://img.shields.io/badge/agentes-184+-purple" alt="Agents" /></a>
   <a href="https://github.com/SynkraAI/aiox-squads"><img src="https://img.shields.io/badge/tasks-499+-green" alt="Tasks" /></a>
@@ -29,15 +29,15 @@
 
 **Se um agente de IA é um _funcionário_, um Squad é um _departamento_ inteiro.**
 
-AIOX Squads é uma biblioteca de times autônomos de agentes IA clonados de especialistas reais, prontos para o Claude Code. Cada squad empacota agentes, tasks, workflows e quality gates numa única pasta que você joga dentro do seu projeto. De copywriting a cybersecurity, de brand strategy a data analytics — cada squad é um time de especialistas de classe mundial pronto para ativar.
+AIOX Squads é a biblioteca oficial de times especializados do framework [AIOS](https://github.com/SynkraAI/aiox-core). Cada squad é um pacote self-contained de agentes IA clonados de especialistas reais — com Voice DNA, heurísticas de decisão e quality gates — que você instala no seu projeto com um comando. De copywriting a cybersecurity, de brand strategy a data analytics.
 
 **Não escreva prompts. Implante departamentos.**
 
 |        | Passo               | Exemplo                                                            |
 | ------ | ------------------- | ------------------------------------------------------------------ |
 | **01** | Escolha um squad    | _"Preciso de copywriting de elite."_                                |
-| **02** | Jogue no projeto    | Copie a pasta para seu projeto. Um comando.                         |
-| **03** | Ative o chief       | `@copy-chief` — o orquestrador do squad roteia seu trabalho para o especialista certo. |
+| **02** | Instale             | `*download-squad copy` — ou copie a pasta manualmente.              |
+| **03** | Ative o chief       | `@copy-chief` — o orquestrador roteia seu trabalho para o especialista certo. |
 
 <br/>
 
@@ -49,12 +49,14 @@ AIOX Squads é uma biblioteca de times autônomos de agentes IA clonados de espe
 <table>
   <tr>
     <td align="center"><strong>Funciona<br/>com</strong></td>
-    <td align="center"><img src="https://cdn.simpleicons.org/anthropic/181818" width="28" alt="Claude" /><br/><sub>Claude Code</sub></td>
-    <td align="center"><img src="https://cdn.simpleicons.org/openai/181818" width="28" alt="Adaptável" /><br/><sub>Adaptável</sub></td>
+    <td align="center"><img src="https://cdn.simpleicons.org/anthropic/181818" width="28" alt="Claude Code" /><br/><sub>Claude Code</sub></td>
+    <td align="center"><img src="https://cdn.simpleicons.org/openai/181818" width="28" alt="Codex CLI" /><br/><sub>Codex CLI</sub></td>
+    <td align="center"><img src="https://cdn.simpleicons.org/google/181818" width="28" alt="Gemini CLI" /><br/><sub>Gemini CLI</sub></td>
+    <td align="center"><img src="https://cdn.simpleicons.org/cursor/181818" width="28" alt="Cursor" /><br/><sub>Cursor</sub></td>
   </tr>
 </table>
 
-<em>Otimizado para Claude Code. Portável para qualquer LLM que suporte agentes estruturados.</em>
+<em>Funciona em qualquer IDE ou CLI que suporte agentes estruturados via <a href="https://github.com/SynkraAI/aiox-core">AIOS</a>.</em>
 
 </div>
 
@@ -82,7 +84,7 @@ Agentes carregam Voice DNA e Thinking DNA de especialistas reais. Não são prom
 </td>
 <td align="center" width="33%">
 <h3>📦 Drop-in Ready</h3>
-Copie uma pasta, ative o chief. Cada squad é totalmente self-contained — agentes, tasks, templates, dados.
+Instale com <code>*download-squad</code> ou copie a pasta. Cada squad é totalmente self-contained — agentes, tasks, templates, dados.
 </td>
 <td align="center" width="33%">
 <h3>🏗️ Arquitetura de Tiers</h3>
@@ -126,7 +128,7 @@ Licença MIT. Use comercialmente. Fork livremente. Contribua de volta.
 | Sem Squads | Com Squads |
 |---|---|
 | ❌ Você gasta 30 minutos escrevendo um prompt de copywriting, e o agente ainda soa genérico. | ✅ `@copy-chief` roteia seu pedido para o agente clonado do Gary Halbert. O Voice DNA cuida do resto. |
-| ❌ Cada projeto novo começa do zero — sem conhecimento, sem frameworks, sem estrutura. | ✅ Jogue uma pasta de squad no projeto. Acesso instantâneo a 60+ mentes especialistas com heurísticas provadas. |
+| ❌ Cada projeto novo começa do zero — sem conhecimento, sem frameworks, sem estrutura. | ✅ `*download-squad advisory-board` — acesso instantâneo a 60+ mentes especialistas com heurísticas provadas. |
 | ❌ Você pede "estratégia de marca" e recebe uma redação vaga de 5 parágrafos. | ✅ O squad de brand roda tasks estruturadas com frameworks de Aaker, Keller e Ries embutidos. |
 | ❌ Seu agente dá conselhos mas você não tem como validar se é realmente bom. | ✅ Toda task tem quality gates, checklists e critérios de scoring. Outputs são medidos, não esperados. |
 | ❌ Você precisa de múltiplas especialidades (copy + data + design) e coordena manualmente entre elas. | ✅ Squads compõem. Protocolos de handoff permitem que agentes deleguem entre fronteiras de squads. |
@@ -151,31 +153,49 @@ Licença MIT. Use comercialmente. Fork livremente. Contribua de volta.
 
 |                                     |                                                                                                    |
 | ----------------------------------- | -------------------------------------------------------------------------------------------------- |
-| **Não é um framework de agentes.**  | Não construímos agentes do zero. Empacotamos conhecimento especialista em times que funcionam out of the box. |
+| **Não é um framework de agentes.**  | O framework é o [AIOS](https://github.com/SynkraAI/aiox-core). Squads são pacotes de conhecimento especialista que rodam nele. |
 | **Não é uma biblioteca de prompts.**| Squads são sistemas completos — agentes, tasks, workflows, checklists, templates, dados. Não só arquivos de texto. |
 | **Não é um chatbot.**               | Agentes têm tasks, quality gates e protocolos de handoff. Não conversas abertas.                    |
 | **Não é one-size-fits-all.**        | Cada squad é um especialista. Escolha os que precisa. Você não instala o hospital inteiro pra uma dor de cabeça. |
-| **Não é preso ao Claude.**          | Otimizado para Claude Code, mas a estrutura de agentes é portável para qualquer sistema que suporte prompts estruturados. |
 
 <br/>
 
 ## Quickstart
 
+### Pré-requisito: AIOS
+
+Squads rodam sobre o framework [AIOS](https://github.com/SynkraAI/aiox-core). Se ainda não tem:
+
 ```bash
-# 1. Clone a biblioteca
+npx aios-core init meu-projeto
+```
+
+### Instalar um Squad
+
+```bash
+# Opção 1: Via CLI do AIOS (recomendado)
+@squad-chief
+*download-squad copy
+
+# Opção 2: Manual
 git clone https://github.com/SynkraAI/aiox-squads.git
-
-# 2. Copie um squad para seu projeto
 cp -r aiox-squads/squads/copy ./squads/copy
+```
 
-# 3. Ative no Claude Code
+### Usar
+
+```bash
+# Ative o chief do squad
 @copy-chief
 
-# 4. Rode uma task
+# Veja os comandos disponíveis
+*help
+
+# Rode uma task
 *create-sales-page
 ```
 
-> **Requisito:** Claude Code CLI com suporte a custom agents.
+> **Compatível com:** Claude Code, Codex CLI, Gemini CLI, Cursor — qualquer IDE suportada pelo [AIOS](https://github.com/SynkraAI/aiox-core).
 
 <br/>
 
@@ -287,6 +307,28 @@ Todo squad passa por 4 tiers de validação:
 
 <br/>
 
+## Comandos CLI
+
+Gerenciamento de squads via `@squad-chief`:
+
+```bash
+# Descobrir e instalar
+*list-squads                              # Listar squads disponíveis
+*download-squad {nome} [@{versão}]        # Instalar um squad
+
+# Criar e editar
+*design-squad [--domain {domínio}]        # Projetar novo squad
+*create-squad {nome} [--template {tipo}]  # Criar a partir de template
+*extend-squad {nome} [--add {tipo}]       # Adicionar agente, task, workflow...
+
+# Validar e publicar
+*validate-squad {nome} [--strict]         # Validar estrutura e qualidade
+*analyze-squad {nome} [--verbose]         # Análise detalhada
+*publish-squad {path}                     # Publicar squad
+```
+
+<br/>
+
 ## Crie Seu Próprio Squad
 
 ### Opção 1: Squad Creator (recomendado)
@@ -315,22 +357,22 @@ Crie `config.yaml`, construa seu agente chief, adicione tasks, depois valide:
 
 ## Ecossistema
 
-AIOX Squads faz parte do ecossistema [SynkraAI](https://github.com/SynkraAI):
+AIOX Squads é a camada de conhecimento especialista do ecossistema [AIOS](https://github.com/SynkraAI):
 
 <div align="center">
 <table>
   <tr>
     <td align="center" width="33%">
-      <a href="https://github.com/SynkraAI/aiox-core"><strong>aiox-core</strong></a><br/>
-      <sub>O motor de orquestração.<br/>CLI-first. 11 agentes built-in.<br/>Desenvolvimento story-driven.</sub>
+      <a href="https://github.com/SynkraAI/aiox-core"><strong>AIOS</strong></a><br/>
+      <sub>O framework de orquestração.<br/>CLI-first. 12 agentes built-in.<br/>Story-driven development.</sub>
     </td>
     <td align="center" width="33%">
-      <a href="https://github.com/SynkraAI/aiox-dashboard"><strong>aiox-dashboard</strong></a><br/>
-      <sub>Observabilidade em tempo real.<br/>Kanban, status de agentes,<br/>monitoramento de eventos ao vivo.</sub>
-    </td>
-    <td align="center" width="33%">
-      <a href="https://github.com/SynkraAI/aiox-squads"><strong>aiox-squads</strong></a><br/>
+      <a href="https://github.com/SynkraAI/aiox-squads"><strong>AIOX Squads</strong></a><br/>
       <sub>Times de IA especialistas.<br/>21 squads, 184+ agentes,<br/>60+ mentes clonadas.</sub>
+    </td>
+    <td align="center" width="33%">
+      <a href="https://github.com/SynkraAI/aiox-dashboard"><strong>AIOX Dashboard</strong></a><br/>
+      <sub>Observabilidade em tempo real.<br/>Kanban, status de agentes,<br/>monitoramento de eventos ao vivo.</sub>
     </td>
   </tr>
 </table>
@@ -340,17 +382,20 @@ AIOX Squads faz parte do ecossistema [SynkraAI](https://github.com/SynkraAI):
 
 ## FAQ
 
-**Preciso de todos os squads?**
-Não. Cada squad é self-contained. Copie apenas o que precisa.
+**Preciso do AIOS pra usar squads?**
+Sim. Squads são pacotes que rodam sobre o framework [AIOS](https://github.com/SynkraAI/aiox-core). Instale com `npx aios-core init`.
 
-**Funciona com outros LLMs além do Claude?**
-Squads são otimizados para Claude Code, mas a estrutura de agentes (persona + heurísticas + tasks) pode ser adaptada para qualquer sistema.
+**Preciso de todos os squads?**
+Não. Cada squad é self-contained. Instale apenas o que precisa.
+
+**Funciona só no Claude Code?**
+Não. O AIOS suporta Claude Code, Codex CLI, Gemini CLI e Cursor. A compatibilidade varia por IDE — Claude Code tem suporte completo.
 
 **Posso usar em projetos comerciais?**
 Sim. Licença MIT.
 
 **Como atualizo um squad?**
-Substitua a pasta do squad pela versão nova. O `CHANGELOG.md` de cada squad documenta breaking changes.
+Rode `*download-squad {nome}` novamente ou substitua a pasta manualmente. O `CHANGELOG.md` de cada squad documenta breaking changes.
 
 **Qual a diferença disso pra uma biblioteca de prompts?**
 Squads são sistemas completos — agentes com heurísticas de decisão, tasks executáveis com quality gates, templates, checklists e bases de conhecimento. Não só arquivos de texto com instruções.
@@ -384,7 +429,7 @@ Veja [CONTRIBUTING.md](CONTRIBUTING.md) para o guia completo.
 
 ## Licença
 
-MIT &copy; 2025 SynkraAI
+MIT &copy; 2026 AIOX Squads
 
 <br/>
 
@@ -395,5 +440,5 @@ MIT &copy; 2025 SynkraAI
 </p>
 
 <p align="center">
-  <sub>Parte do ecossistema <a href="https://github.com/SynkraAI">SynkraAI</a>.</sub>
+  <sub>Parte do ecossistema <a href="https://github.com/SynkraAI">AIOS</a>.</sub>
 </p>
