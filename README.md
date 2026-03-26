@@ -164,8 +164,8 @@ Squads publicados pela comunidade neste repositório.
 | [Kaizen V2](squads/kaizen-v2/) | Evolução do kaizen v1: sistema nervoso do projeto com sensoriamento diário (Tier 0). | [PR #10](https://github.com/SynkraAI/aiox-squads/pull/10) | [@murilloimparavel](https://github.com/murilloimparavel) |
 | [Legal Analyst](squads/legal-analyst/) | Sistema de analise juridica processual com 15 agentes especializados. | [PR #9](https://github.com/SynkraAI/aiox-squads/pull/9) | [@felippepestana](https://github.com/felippepestana) |
 | [SEO](squads/seo/) | Post-design SEO optimization squad. | [PR #3](https://github.com/SynkraAI/aiox-squads/pull/3) | [@rodrigofaerman](https://github.com/rodrigofaerman) |
-| [Squad Creator](squads/squad-creator/) | Base meta-squad para criar squads de agentes via templates e validacao estrutural. | [commit 3c90431](https://github.com/SynkraAI/aiox-squads/commit/3c90431a18fc2c42d8fadf1da2e596c390e9a850) | [@oalanicolas](https://github.com/oalanicolas) |
-| [Squad Creator Pro](squads/squad-creator-pro/) | **O upgrade pack que transforma o Squad Creator base em uma fábrica de squads de elite.** | [commit 921a002](https://github.com/SynkraAI/aiox-squads/commit/921a002c9c689ac131a8c4dc75de4a3f6f249c4e) | [@oalanicolas](https://github.com/oalanicolas) |
+| [Squad Creator](squads/squad-creator/) | Base meta-squad para criar squads de agentes via templates e validacao estrutural. | [commit 3c90431](https://github.com/graperes/aiox-squads/commit/3c90431a18fc2c42d8fadf1da2e596c390e9a850) | [@oalanicolas](https://github.com/oalanicolas) |
+| [Squad Creator Pro](squads/squad-creator-pro/) | **O upgrade pack que transforma o Squad Creator base em uma fábrica de squads de elite.** | [commit 921a002](https://github.com/graperes/aiox-squads/commit/921a002c9c689ac131a8c4dc75de4a3f6f249c4e) | [@oalanicolas](https://github.com/oalanicolas) |
 <!-- AUTO-GENERATED-SQUAD-CATALOG:END -->
 
 > Tem um squad pronto? [Abra um PR](#contribuindo) e compartilhe com a comunidade.
